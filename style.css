@@ -1,0 +1,38 @@
+{
+    font-style: normal;
+}
+
+p
+{
+    color: rgb(41, 3, 102);
+    font-size: 1.2em;
+    font-style : italic;
+    text-align: justify;
+}
+
+h1, em
+{
+    color:rgb(143, 51, 161);
+    font-size : 1.7em;
+    font-style : italic;
+}
+
+h2
+{
+    color: rgb(41, 3, 102);
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+body {
+ 
+  background-color: rgb(237, 253, 246);
+}
+
+ul {
+  color: rgb(41, 3, 102);
+  font-style : italic;
+  font-size: 1.2em;
+}
