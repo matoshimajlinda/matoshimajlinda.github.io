@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet Application</title>
+   </head>
+  <body>
+    <h1 id="top">Projet Application</h1>
+   <h2> Consignes </h2>
+   <p> Ce projet consiste a ajouter une Application dans ce site.On doit coder en python, en HTML, en CSS et utiliser des tables CSV.Cette application est basée sur un carte géographique, qui doit être réaliser par nous même et il faut y faire apparaître des pop-ups.Les pop-ups sont des petits onglets qui apparaissent quand on appuie dans un bouton. </p>
+   <h2> Présentaion de mon Projet </h2>
+   <p> Alors moi mon application ce concentre sur la France, plus précisement sur ses départements.Elle étudie combien de cas positive du COVID-19 ont été repéré dans chaque départements.Il suffie de cliqué sur les points (marqueur)de chaque préfecture de chaque départements.Puis quand on clique sur points, on peut voir s'afficher un pop-up où il y a un graphique qui dit : depuis le 11/04/2020 au 04/05/2020 il y a eu 'n' cas positive (en tout depuis la premiere date). Pour trouver mes données, sur le nombre de cas de COVID-19, je suis aller chercher sur "data.gouv.fr" et pour les coordoné GPS, je suis aller surle même ite mais il n'y avait du coup je suis allé sur Wikipedia il y avait le coordonnés de chaque préfectures.</p>
+    <p>Ducoup mes Questions sont:
+      <ul> 
+        <li> Combien y a t'il de cas dans chaque départements ? (rep: on regarde les graphiques) </li>
+        <li> Evolue t'elle ou diminue t'elle ? ( rep: on regarde les graphiques) </li>
+        <li> Quels sont les départements les plus touchés ?(rep: on regarde les graphiques) </li>
+      </ul>
+    </p>
+       
+   <h2>Démarche </h2>
+   <p>Tout d'abord, il faut trouver ses questions puis chercher les données! Trés important!Quand on a nos questions et nos données, la on va commncé a programmer. Moi perso j'ai commencé par réaliser ma carte.Le plus pratique, c'est d'utiliser Folium! Moi je me suis aider en regardant sur un site (francais) pour créer ma carte (c'etait simple).Puis, je commancer à créer un code qui pourrai lire une table CSV où il y a les coordonnés GPS de chaque préfecture.(voir le  code ci dessous).  </p>
+    <img src = "moncodePB1.png" alt = "pbPoints" />
+   <img src = "pbPartie1.png" alt = "pbPointsconsole1" />
+   <img src = "pbPartie2.png" alt = "pbPointsconsole2" />
+    <ul> 
+      <li>
+        <a href="rapport.html" > rapport </a>
+      </li>
+      <li>
+        <a href="projet.html" > projet </a>
+      </li>
+    </ul>
+
+  </body>
+</html>
