@@ -1480,5 +1480,5 @@ folium.Marker([46.2 ,5.216667],popup=folium.Popup().add_child(folium.VegaLite(ch
 
 
 
-c.save('index.html')
+c.save('applicationsVRAIE.html')
 
