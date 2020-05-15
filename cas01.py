@@ -44,4 +44,4 @@ chart = {
 
 c= folium.Map(location=[46.078025, 6.409053],zoom_start=6)
 folium.Marker([46.2 , 5.216667],popup=folium.Popup().add_child(folium.VegaLite(chart)),).add_to(c)
-c.save('index.html')
+c.save('maCarte.html')
