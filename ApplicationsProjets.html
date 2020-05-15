@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f6a8ec8d1e96453c8216e4a7d83a5d54 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_lite_ae1fae4e865f40268cc13dbdd091e2e3 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdn.jsdelivr.net/npm/vega@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+    
+            <style> #vega_lite_b44bd13b0d7b42f6b3412a4c822fda2c {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_dadb8494f41549a59ec0920300023145 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_36d320454e1c4424a28951001b172c11 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e273db889a4442ba9b60f14a86eb8c37 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_9d1772b4c92742799dc7bda993c5a3e2 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_b3592a8874504b98855063d94f70c2f4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_fec1e776a38e4cdbba13225e4471a02c {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_54a84a4eb4b04a7ba4d857f733b15b8d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a9e0c0b329ac44a4bc1d336878de24df {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c85296630c4940ad8a0547ce73a8a167 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ed1c96be246644309d1bf693cb20a3d5 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a3454f145d954eddbdd298a02cb7519d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7b6e0f8ac5674c84ad0a90bca2554c18 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_965f15c2a56b47569d3235054657c560 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_44e5a3eb39c0416792526c4ceb253e84 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_2bcf0e58e3b4403790b6c2f9432551be {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_396296ac7e60483ba4b74c7ee53ab2c2 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6491849e45b942f7b918c1cc838c1044 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_738cb7cf2d9b433abf9f4517ad399f61 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e5b51d9451964b5f9dc910ee79457304 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a50ee886a4cf412fb063e19ee56286c2 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_38e820825f5144deb88cadc6ee0b61e8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bda9c93014a840209462a5f58bdf4f2e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_5a1fa74d4a5d4b5db234a08d3a8b8e4b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3a86b6bf311d41d791e9c814329af258 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_acf61ef1b6ff469c9edca198e053e3ae {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_8722a85277514ab58fd7b1c5e19fb9ab {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bba55b33acbf4f46959942e50d9b2478 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_9c4b4b0d149346bf86de6eebecfaa26e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_b93d4c88caf4429ab2bc971b3eb186da {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6a493c86ed35444eba744d7ea90fb5f5 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_4809ec3fc90446c099a489858f144b2d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_f89426d351aa43d29e9b8fe8e9888d7e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_429bb68215664a2bb57607171f82377d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6540b5062e144cd7ab9fa46f13134cd1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f6a8ec8d1e96453c8216e4a7d83a5d54" ></div>
+        
+</body>
+<script>    
+    
+            var map_f6a8ec8d1e96453c8216e4a7d83a5d54 = L.map(
+                "map_f6a8ec8d1e96453c8216e4a7d83a5d54",
+                {
+                    center: [46.078025, 6.409053],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3c5e83f8db554d648ce350b24b883a54 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+            var marker_2afdd12bb5c0400fa62f222ff5b5403f = L.marker(
+                [46.2, 5.216667],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_8ed21799b12f498a9c36db44080775ad = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_ae1fae4e865f40268cc13dbdd091e2e3 = $(`             <div id="vega_lite_ae1fae4e865f40268cc13dbdd091e2e3"></div>             `)[0];
+            popup_8ed21799b12f498a9c36db44080775ad.setContent(vega_lite_ae1fae4e865f40268cc13dbdd091e2e3);
+        
+
+        marker_2afdd12bb5c0400fa62f222ff5b5403f.bindPopup(popup_8ed21799b12f498a9c36db44080775ad)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ae1fae4e865f40268cc13dbdd091e2e3, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "ain ", "data": {"values": [{"jour": "2020/04/11", "cas": 7}, {"jour": "2020/04/12", "cas": 7}, {"jour": "2020/04/13", "cas": 7}, {"jour": "2020/04/14", "cas": 8}, {"jour": "2020/04/15", "cas": 9}, {"jour": "2020/04/16", "cas": 9}, {"jour": "2020/04/17", "cas": 9}, {"jour": "2020/04/18", "cas": 10}, {"jour": "2020/04/19", "cas": 10}, {"jour": "2020/04/20", "cas": 10}, {"jour": "2020/04/21", "cas": 10}, {"jour": "2020/04/22", "cas": 10}, {"jour": "2020/04/23", "cas": 10}, {"jour": "2020/04/24", "cas": 10}, {"jour": "2020/04/25", "cas": 10}, {"jour": "2020/04/26", "cas": 10}, {"jour": "2020/04/27", "cas": 10}, {"jour": "2020/04/28", "cas": 10}, {"jour": "2020/04/29", "cas": 10}, {"jour": "2020/04/30", "cas": 10}, {"jour": "2020/05/01", "cas": 11}, {"jour": "2020/05/02", "cas": 11}, {"jour": "2020/05/03", "cas": 11}, {"jour": "2020/05/04", "cas": 11}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_2608b4ef6ec444f6bfefa07165078ed2 = L.marker(
+                [49.564665, 3.620686],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_dba1349ce13042dfb235495e47b134f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_b44bd13b0d7b42f6b3412a4c822fda2c = $(`             <div id="vega_lite_b44bd13b0d7b42f6b3412a4c822fda2c"></div>             `)[0];
+            popup_dba1349ce13042dfb235495e47b134f0.setContent(vega_lite_b44bd13b0d7b42f6b3412a4c822fda2c);
+        
+
+        marker_2608b4ef6ec444f6bfefa07165078ed2.bindPopup(popup_dba1349ce13042dfb235495e47b134f0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_b44bd13b0d7b42f6b3412a4c822fda2c, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:02 ", "data": {"values": [{"jour": "2020/04/11", "cas": 12}, {"jour": "2020/04/12", "cas": 12}, {"jour": "2020/04/13", "cas": 12}, {"jour": "2020/04/14", "cas": 12}, {"jour": "2020/04/15", "cas": 12}, {"jour": "2020/04/16", "cas": 12}, {"jour": "2020/04/17", "cas": 12}, {"jour": "2020/04/18", "cas": 12}, {"jour": "2020/04/19", "cas": 12}, {"jour": "2020/04/20", "cas": 12}, {"jour": "2020/04/21", "cas": 12}, {"jour": "2020/04/22", "cas": 12}, {"jour": "2020/04/23", "cas": 12}, {"jour": "2020/04/24", "cas": 12}, {"jour": "2020/04/25", "cas": 12}, {"jour": "2020/04/26", "cas": 12}, {"jour": "2020/04/27", "cas": 12}, {"jour": "2020/04/28", "cas": 12}, {"jour": "2020/04/29", "cas": 12}, {"jour": "2020/04/30", "cas": 12}, {"jour": "2020/05/01", "cas": 12}, {"jour": "2020/05/02", "cas": 12}, {"jour": "2020/05/03", "cas": 12}, {"jour": "2020/05/04", "cas": 12}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_bb03dad451de45e09322af3b5156fbf2 = L.marker(
+                [49.416667, 3.683333],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_1243c003d6314b96aa5731a0c21e6bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_dadb8494f41549a59ec0920300023145 = $(`             <div id="vega_lite_dadb8494f41549a59ec0920300023145"></div>             `)[0];
+            popup_1243c003d6314b96aa5731a0c21e6bb8.setContent(vega_lite_dadb8494f41549a59ec0920300023145);
+        
+
+        marker_bb03dad451de45e09322af3b5156fbf2.bindPopup(popup_1243c003d6314b96aa5731a0c21e6bb8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_dadb8494f41549a59ec0920300023145, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:03 ", "data": {"values": [{"jour": "2020/04/11", "cas": 3}, {"jour": "2020/04/12", "cas": 3}, {"jour": "2020/04/13", "cas": 3}, {"jour": "2020/04/14", "cas": 3}, {"jour": "2020/04/15", "cas": 3}, {"jour": "2020/04/16", "cas": 3}, {"jour": "2020/04/17", "cas": 3}, {"jour": "2020/04/18", "cas": 3}, {"jour": "2020/04/19", "cas": 3}, {"jour": "2020/04/20", "cas": 3}, {"jour": "2020/04/21", "cas": 3}, {"jour": "2020/04/22", "cas": 3}, {"jour": "2020/04/23", "cas": 3}, {"jour": "2020/04/24", "cas": 3}, {"jour": "2020/04/25", "cas": 3}, {"jour": "2020/04/26", "cas": 3}, {"jour": "2020/04/27", "cas": 3}, {"jour": "2020/04/28", "cas": 3}, {"jour": "2020/04/29", "cas": 3}, {"jour": "2020/04/30", "cas": 3}, {"jour": "2020/05/01", "cas": 3}, {"jour": "2020/05/02", "cas": 3}, {"jour": "2020/05/03", "cas": 3}, {"jour": "2020/05/04", "cas": 3}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_8a5a1229737348d198039085828a979f = L.marker(
+                [44.0918144, 6.2351431],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_52460161e6384dbf8c50dfad5e0269a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_36d320454e1c4424a28951001b172c11 = $(`             <div id="vega_lite_36d320454e1c4424a28951001b172c11"></div>             `)[0];
+            popup_52460161e6384dbf8c50dfad5e0269a2.setContent(vega_lite_36d320454e1c4424a28951001b172c11);
+        
+
+        marker_8a5a1229737348d198039085828a979f.bindPopup(popup_52460161e6384dbf8c50dfad5e0269a2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_36d320454e1c4424a28951001b172c11, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:04 ", "data": {"values": [{"jour": "2020/04/11", "cas": 5}, {"jour": "2020/04/12", "cas": 5}, {"jour": "2020/04/13", "cas": 5}, {"jour": "2020/04/14", "cas": 5}, {"jour": "2020/04/15", "cas": 5}, {"jour": "2020/04/16", "cas": 5}, {"jour": "2020/04/17", "cas": 5}, {"jour": "2020/04/18", "cas": 5}, {"jour": "2020/04/19", "cas": 5}, {"jour": "2020/04/20", "cas": 5}, {"jour": "2020/04/21", "cas": 5}, {"jour": "2020/04/22", "cas": 5}, {"jour": "2020/04/23", "cas": 5}, {"jour": "2020/04/24", "cas": 6}, {"jour": "2020/04/25", "cas": 6}, {"jour": "2020/04/26", "cas": 6}, {"jour": "2020/04/27", "cas": 6}, {"jour": "2020/04/28", "cas": 7}, {"jour": "2020/04/29", "cas": 7}, {"jour": "2020/04/30", "cas": 7}, {"jour": "2020/05/01", "cas": 7}, {"jour": "2020/05/02", "cas": 7}, {"jour": "2020/05/03", "cas": 7}, {"jour": "2020/05/04", "cas": 7}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_8f15116d1cec44a296a547e3a870d85b = L.marker(
+                [43.7009358, 7.2683912],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_6228bd35e9bb453fbe89fe8acaaa7c1b = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_e273db889a4442ba9b60f14a86eb8c37 = $(`             <div id="vega_lite_e273db889a4442ba9b60f14a86eb8c37"></div>             `)[0];
+            popup_6228bd35e9bb453fbe89fe8acaaa7c1b.setContent(vega_lite_e273db889a4442ba9b60f14a86eb8c37);
+        
+
+        marker_8f15116d1cec44a296a547e3a870d85b.bindPopup(popup_6228bd35e9bb453fbe89fe8acaaa7c1b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e273db889a4442ba9b60f14a86eb8c37, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:06 ", "data": {"values": [{"jour": "2020/04/11", "cas": 25}, {"jour": "2020/04/12", "cas": 26}, {"jour": "2020/04/13", "cas": 26}, {"jour": "2020/04/14", "cas": 26}, {"jour": "2020/04/15", "cas": 26}, {"jour": "2020/04/16", "cas": 26}, {"jour": "2020/04/17", "cas": 27}, {"jour": "2020/04/18", "cas": 27}, {"jour": "2020/04/19", "cas": 27}, {"jour": "2020/04/20", "cas": 27}, {"jour": "2020/04/21", "cas": 27}, {"jour": "2020/04/22", "cas": 27}, {"jour": "2020/04/23", "cas": 27}, {"jour": "2020/04/24", "cas": 27}, {"jour": "2020/04/25", "cas": 27}, {"jour": "2020/04/26", "cas": 27}, {"jour": "2020/04/27", "cas": 27}, {"jour": "2020/04/28", "cas": 27}, {"jour": "2020/04/29", "cas": 27}, {"jour": "2020/04/30", "cas": 27}, {"jour": "2020/05/01", "cas": 27}, {"jour": "2020/05/02", "cas": 27}, {"jour": "2020/05/03", "cas": 27}, {"jour": "2020/05/04", "cas": 27}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_a1e345d493fc41f3956afb48b9096aa3 = L.marker(
+                [44.7352708, 4.59867332],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_b3c2b6410f5d4942b0a004b52c515695 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_9d1772b4c92742799dc7bda993c5a3e2 = $(`             <div id="vega_lite_9d1772b4c92742799dc7bda993c5a3e2"></div>             `)[0];
+            popup_b3c2b6410f5d4942b0a004b52c515695.setContent(vega_lite_9d1772b4c92742799dc7bda993c5a3e2);
+        
+
+        marker_a1e345d493fc41f3956afb48b9096aa3.bindPopup(popup_b3c2b6410f5d4942b0a004b52c515695)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_9d1772b4c92742799dc7bda993c5a3e2, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:07 ", "data": {"values": [{"jour": "2020/04/11", "cas": 5}, {"jour": "2020/04/12", "cas": 5}, {"jour": "2020/04/13", "cas": 5}, {"jour": "2020/04/14", "cas": 5}, {"jour": "2020/04/15", "cas": 5}, {"jour": "2020/04/16", "cas": 5}, {"jour": "2020/04/17", "cas": 5}, {"jour": "2020/04/18", "cas": 5}, {"jour": "2020/04/19", "cas": 5}, {"jour": "2020/04/20", "cas": 5}, {"jour": "2020/04/21", "cas": 5}, {"jour": "2020/04/22", "cas": 5}, {"jour": "2020/04/23", "cas": 5}, {"jour": "2020/04/24", "cas": 5}, {"jour": "2020/04/25", "cas": 5}, {"jour": "2020/04/26", "cas": 5}, {"jour": "2020/04/27", "cas": 5}, {"jour": "2020/04/28", "cas": 6}, {"jour": "2020/04/29", "cas": 6}, {"jour": "2020/04/30", "cas": 8}, {"jour": "2020/05/01", "cas": 10}, {"jour": "2020/05/02", "cas": 10}, {"jour": "2020/05/03", "cas": 10}, {"jour": "2020/05/04", "cas": 10}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_2737f9e431224645887c4384f166606c = L.marker(
+                [49.7735712, 4.7206939],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_6d4be4b8a6484ad783cf9d5094c03054 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_b3592a8874504b98855063d94f70c2f4 = $(`             <div id="vega_lite_b3592a8874504b98855063d94f70c2f4"></div>             `)[0];
+            popup_6d4be4b8a6484ad783cf9d5094c03054.setContent(vega_lite_b3592a8874504b98855063d94f70c2f4);
+        
+
+        marker_2737f9e431224645887c4384f166606c.bindPopup(popup_6d4be4b8a6484ad783cf9d5094c03054)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_b3592a8874504b98855063d94f70c2f4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:08 ", "data": {"values": [{"jour": "2020/04/11", "cas": 3}, {"jour": "2020/04/12", "cas": 3}, {"jour": "2020/04/13", "cas": 3}, {"jour": "2020/04/14", "cas": 4}, {"jour": "2020/04/15", "cas": 4}, {"jour": "2020/04/16", "cas": 4}, {"jour": "2020/04/17", "cas": 4}, {"jour": "2020/04/18", "cas": 4}, {"jour": "2020/04/19", "cas": 4}, {"jour": "2020/04/20", "cas": 4}, {"jour": "2020/04/21", "cas": 4}, {"jour": "2020/04/22", "cas": 4}, {"jour": "2020/04/23", "cas": 4}, {"jour": "2020/04/24", "cas": 4}, {"jour": "2020/04/25", "cas": 5}, {"jour": "2020/04/26", "cas": 5}, {"jour": "2020/04/27", "cas": 5}, {"jour": "2020/04/28", "cas": 5}, {"jour": "2020/04/29", "cas": 5}, {"jour": "2020/04/30", "cas": 5}, {"jour": "2020/05/01", "cas": 5}, {"jour": "2020/05/02", "cas": 5}, {"jour": "2020/05/03", "cas": 5}, {"jour": "2020/05/04", "cas": 5}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_3e08442932fc4cb5a9f0cab0f7187e7f = L.marker(
+                [42.9638998, 1.6053807],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_52a548eaf1254bc18a81a8108f4ccde7 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_fec1e776a38e4cdbba13225e4471a02c = $(`             <div id="vega_lite_fec1e776a38e4cdbba13225e4471a02c"></div>             `)[0];
+            popup_52a548eaf1254bc18a81a8108f4ccde7.setContent(vega_lite_fec1e776a38e4cdbba13225e4471a02c);
+        
+
+        marker_3e08442932fc4cb5a9f0cab0f7187e7f.bindPopup(popup_52a548eaf1254bc18a81a8108f4ccde7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_fec1e776a38e4cdbba13225e4471a02c, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:09 ", "data": {"values": [{"jour": "2020/04/11", "cas": 2}, {"jour": "2020/04/12", "cas": 2}, {"jour": "2020/04/13", "cas": 2}, {"jour": "2020/04/14", "cas": 2}, {"jour": "2020/04/15", "cas": 2}, {"jour": "2020/04/16", "cas": 2}, {"jour": "2020/04/17", "cas": 2}, {"jour": "2020/04/18", "cas": 2}, {"jour": "2020/04/19", "cas": 2}, {"jour": "2020/04/20", "cas": 2}, {"jour": "2020/04/21", "cas": 2}, {"jour": "2020/04/22", "cas": 2}, {"jour": "2020/04/23", "cas": 2}, {"jour": "2020/04/24", "cas": 2}, {"jour": "2020/04/25", "cas": 2}, {"jour": "2020/04/26", "cas": 2}, {"jour": "2020/04/27", "cas": 2}, {"jour": "2020/04/28", "cas": 2}, {"jour": "2020/04/29", "cas": 2}, {"jour": "2020/04/30", "cas": 2}, {"jour": "2020/05/01", "cas": 2}, {"jour": "2020/05/02", "cas": 2}, {"jour": "2020/05/03", "cas": 2}, {"jour": "2020/05/04", "cas": 2}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_17dbc534fdc2431eba53a84f8e095d71 = L.marker(
+                [48.2971626, 4.0746257],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_f2bd67e5608b402b996562e71df0c11b = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_54a84a4eb4b04a7ba4d857f733b15b8d = $(`             <div id="vega_lite_54a84a4eb4b04a7ba4d857f733b15b8d"></div>             `)[0];
+            popup_f2bd67e5608b402b996562e71df0c11b.setContent(vega_lite_54a84a4eb4b04a7ba4d857f733b15b8d);
+        
+
+        marker_17dbc534fdc2431eba53a84f8e095d71.bindPopup(popup_f2bd67e5608b402b996562e71df0c11b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_54a84a4eb4b04a7ba4d857f733b15b8d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:10 ", "data": {"values": [{"jour": "2020/04/11", "cas": 5}, {"jour": "2020/04/12", "cas": 5}, {"jour": "2020/04/13", "cas": 5}, {"jour": "2020/04/14", "cas": 5}, {"jour": "2020/04/15", "cas": 5}, {"jour": "2020/04/16", "cas": 5}, {"jour": "2020/04/17", "cas": 5}, {"jour": "2020/04/18", "cas": 5}, {"jour": "2020/04/19", "cas": 5}, {"jour": "2020/04/20", "cas": 5}, {"jour": "2020/04/21", "cas": 5}, {"jour": "2020/04/22", "cas": 5}, {"jour": "2020/04/23", "cas": 5}, {"jour": "2020/04/24", "cas": 5}, {"jour": "2020/04/25", "cas": 5}, {"jour": "2020/04/26", "cas": 5}, {"jour": "2020/04/27", "cas": 5}, {"jour": "2020/04/28", "cas": 5}, {"jour": "2020/04/29", "cas": 8}, {"jour": "2020/04/30", "cas": 8}, {"jour": "2020/05/01", "cas": 8}, {"jour": "2020/05/02", "cas": 8}, {"jour": "2020/05/03", "cas": 8}, {"jour": "2020/05/04", "cas": 8}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_c0c21ff08fa44ea88ca2ee7ae68d9dff = L.marker(
+                [43.2130358, 2.34910697],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_53bf16d3224140e29844540687bb85c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_a9e0c0b329ac44a4bc1d336878de24df = $(`             <div id="vega_lite_a9e0c0b329ac44a4bc1d336878de24df"></div>             `)[0];
+            popup_53bf16d3224140e29844540687bb85c2.setContent(vega_lite_a9e0c0b329ac44a4bc1d336878de24df);
+        
+
+        marker_c0c21ff08fa44ea88ca2ee7ae68d9dff.bindPopup(popup_53bf16d3224140e29844540687bb85c2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a9e0c0b329ac44a4bc1d336878de24df, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:11 ", "data": {"values": [{"jour": "2020/04/11", "cas": 5}, {"jour": "2020/04/12", "cas": 5}, {"jour": "2020/04/13", "cas": 5}, {"jour": "2020/04/14", "cas": 5}, {"jour": "2020/04/15", "cas": 5}, {"jour": "2020/04/16", "cas": 5}, {"jour": "2020/04/17", "cas": 5}, {"jour": "2020/04/18", "cas": 5}, {"jour": "2020/04/19", "cas": 5}, {"jour": "2020/04/20", "cas": 5}, {"jour": "2020/04/21", "cas": 5}, {"jour": "2020/04/22", "cas": 5}, {"jour": "2020/04/23", "cas": 5}, {"jour": "2020/04/24", "cas": 5}, {"jour": "2020/04/25", "cas": 5}, {"jour": "2020/04/26", "cas": 5}, {"jour": "2020/04/27", "cas": 5}, {"jour": "2020/04/28", "cas": 5}, {"jour": "2020/04/29", "cas": 5}, {"jour": "2020/04/30", "cas": 5}, {"jour": "2020/05/01", "cas": 5}, {"jour": "2020/05/02", "cas": 5}, {"jour": "2020/05/03", "cas": 5}, {"jour": "2020/05/04", "cas": 5}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_5c92b6c2457e47d4961b39e93c55ab86 = L.marker(
+                [44.3513062, 2.5727883],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_08a8c9ca5cc84416830579c8801c79aa = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_c85296630c4940ad8a0547ce73a8a167 = $(`             <div id="vega_lite_c85296630c4940ad8a0547ce73a8a167"></div>             `)[0];
+            popup_08a8c9ca5cc84416830579c8801c79aa.setContent(vega_lite_c85296630c4940ad8a0547ce73a8a167);
+        
+
+        marker_5c92b6c2457e47d4961b39e93c55ab86.bindPopup(popup_08a8c9ca5cc84416830579c8801c79aa)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c85296630c4940ad8a0547ce73a8a167, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:12 ", "data": {"values": [{"jour": "2020/04/11", "cas": 2}, {"jour": "2020/04/12", "cas": 2}, {"jour": "2020/04/13", "cas": 2}, {"jour": "2020/04/14", "cas": 2}, {"jour": "2020/04/15", "cas": 2}, {"jour": "2020/04/16", "cas": 2}, {"jour": "2020/04/17", "cas": 2}, {"jour": "2020/04/18", "cas": 2}, {"jour": "2020/04/19", "cas": 2}, {"jour": "2020/04/20", "cas": 3}, {"jour": "2020/04/21", "cas": 2}, {"jour": "2020/04/22", "cas": 2}, {"jour": "2020/04/23", "cas": 2}, {"jour": "2020/04/24", "cas": 2}, {"jour": "2020/04/25", "cas": 2}, {"jour": "2020/04/26", "cas": 2}, {"jour": "2020/04/27", "cas": 2}, {"jour": "2020/04/28", "cas": 2}, {"jour": "2020/04/29", "cas": 2}, {"jour": "2020/04/30", "cas": 3}, {"jour": "2020/05/01", "cas": 3}, {"jour": "2020/05/02", "cas": 3}, {"jour": "2020/05/03", "cas": 3}, {"jour": "2020/05/04", "cas": 3}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_430cb6ed13554de2884fd58a9fa3e84e = L.marker(
+                [48.584614, 7.7507127],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_eb90ac9af7164845900ba80c5c8d7035 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_ed1c96be246644309d1bf693cb20a3d5 = $(`             <div id="vega_lite_ed1c96be246644309d1bf693cb20a3d5"></div>             `)[0];
+            popup_eb90ac9af7164845900ba80c5c8d7035.setContent(vega_lite_ed1c96be246644309d1bf693cb20a3d5);
+        
+
+        marker_430cb6ed13554de2884fd58a9fa3e84e.bindPopup(popup_eb90ac9af7164845900ba80c5c8d7035)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ed1c96be246644309d1bf693cb20a3d5, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:67 ", "data": {"values": [{"jour": "2020/04/11", "cas": 27}, {"jour": "2020/04/12", "cas": 27}, {"jour": "2020/04/13", "cas": 27}, {"jour": "2020/04/14", "cas": 27}, {"jour": "2020/04/15", "cas": 27}, {"jour": "2020/04/16", "cas": 27}, {"jour": "2020/04/17", "cas": 27}, {"jour": "2020/04/18", "cas": 27}, {"jour": "2020/04/19", "cas": 27}, {"jour": "2020/04/20", "cas": 27}, {"jour": "2020/04/21", "cas": 27}, {"jour": "2020/04/22", "cas": 27}, {"jour": "2020/04/23", "cas": 27}, {"jour": "2020/04/24", "cas": 27}, {"jour": "2020/04/25", "cas": 27}, {"jour": "2020/04/26", "cas": 27}, {"jour": "2020/04/27", "cas": 28}, {"jour": "2020/04/28", "cas": 28}, {"jour": "2020/04/29", "cas": 28}, {"jour": "2020/04/30", "cas": 28}, {"jour": "2020/05/01", "cas": 28}, {"jour": "2020/05/02", "cas": 28}, {"jour": "2020/05/03", "cas": 28}, {"jour": "2020/05/04", "cas": 28}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_46685c00a7724d0bbde4e88d1a15ce0a = L.marker(
+                [43.2961743, 5.3699525],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_12e9ec6d3df84d7ca5c90e7425577100 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_a3454f145d954eddbdd298a02cb7519d = $(`             <div id="vega_lite_a3454f145d954eddbdd298a02cb7519d"></div>             `)[0];
+            popup_12e9ec6d3df84d7ca5c90e7425577100.setContent(vega_lite_a3454f145d954eddbdd298a02cb7519d);
+        
+
+        marker_46685c00a7724d0bbde4e88d1a15ce0a.bindPopup(popup_12e9ec6d3df84d7ca5c90e7425577100)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a3454f145d954eddbdd298a02cb7519d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:13 ", "data": {"values": [{"jour": "2020/04/11", "cas": 44}, {"jour": "2020/04/12", "cas": 44}, {"jour": "2020/04/13", "cas": 44}, {"jour": "2020/04/14", "cas": 44}, {"jour": "2020/04/15", "cas": 45}, {"jour": "2020/04/16", "cas": 45}, {"jour": "2020/04/17", "cas": 48}, {"jour": "2020/04/18", "cas": 49}, {"jour": "2020/04/19", "cas": 49}, {"jour": "2020/04/20", "cas": 49}, {"jour": "2020/04/21", "cas": 49}, {"jour": "2020/04/22", "cas": 50}, {"jour": "2020/04/23", "cas": 51}, {"jour": "2020/04/24", "cas": 51}, {"jour": "2020/04/25", "cas": 53}, {"jour": "2020/04/26", "cas": 53}, {"jour": "2020/04/27", "cas": 54}, {"jour": "2020/04/28", "cas": 53}, {"jour": "2020/04/29", "cas": 53}, {"jour": "2020/04/30", "cas": 53}, {"jour": "2020/05/01", "cas": 53}, {"jour": "2020/05/02", "cas": 53}, {"jour": "2020/05/03", "cas": 53}, {"jour": "2020/05/04", "cas": 53}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_40cfe755e3044cd2a81a6c994a1c4ce3 = L.marker(
+                [49.1828008, -0.3690815],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_12806291c8b448aebc96507819582ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_7b6e0f8ac5674c84ad0a90bca2554c18 = $(`             <div id="vega_lite_7b6e0f8ac5674c84ad0a90bca2554c18"></div>             `)[0];
+            popup_12806291c8b448aebc96507819582ef2.setContent(vega_lite_7b6e0f8ac5674c84ad0a90bca2554c18);
+        
+
+        marker_40cfe755e3044cd2a81a6c994a1c4ce3.bindPopup(popup_12806291c8b448aebc96507819582ef2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7b6e0f8ac5674c84ad0a90bca2554c18, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:14 ", "data": {"values": [{"jour": "2020/04/11", "cas": 9}, {"jour": "2020/04/12", "cas": 9}, {"jour": "2020/04/13", "cas": 8}, {"jour": "2020/04/14", "cas": 8}, {"jour": "2020/04/15", "cas": 10}, {"jour": "2020/04/16", "cas": 11}, {"jour": "2020/04/17", "cas": 12}, {"jour": "2020/04/18", "cas": 12}, {"jour": "2020/04/19", "cas": 12}, {"jour": "2020/04/20", "cas": 12}, {"jour": "2020/04/21", "cas": 13}, {"jour": "2020/04/22", "cas": 13}, {"jour": "2020/04/23", "cas": 13}, {"jour": "2020/04/24", "cas": 13}, {"jour": "2020/04/25", "cas": 13}, {"jour": "2020/04/26", "cas": 13}, {"jour": "2020/04/27", "cas": 13}, {"jour": "2020/04/28", "cas": 14}, {"jour": "2020/04/29", "cas": 14}, {"jour": "2020/04/30", "cas": 14}, {"jour": "2020/05/01", "cas": 14}, {"jour": "2020/05/02", "cas": 14}, {"jour": "2020/05/03", "cas": 14}, {"jour": "2020/05/04", "cas": 14}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_2f8649f229494dc292508cd61dc93ff2 = L.marker(
+                [44.9285441, 2.4433101],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_b29fc14236394fb5ad0f7e7641d38c48 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_965f15c2a56b47569d3235054657c560 = $(`             <div id="vega_lite_965f15c2a56b47569d3235054657c560"></div>             `)[0];
+            popup_b29fc14236394fb5ad0f7e7641d38c48.setContent(vega_lite_965f15c2a56b47569d3235054657c560);
+        
+
+        marker_2f8649f229494dc292508cd61dc93ff2.bindPopup(popup_b29fc14236394fb5ad0f7e7641d38c48)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_965f15c2a56b47569d3235054657c560, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:15 ", "data": {"values": [{"jour": "2020/04/11", "cas": 3}, {"jour": "2020/04/12", "cas": 3}, {"jour": "2020/04/13", "cas": 3}, {"jour": "2020/04/14", "cas": 3}, {"jour": "2020/04/15", "cas": 3}, {"jour": "2020/04/16", "cas": 3}, {"jour": "2020/04/17", "cas": 3}, {"jour": "2020/04/18", "cas": 3}, {"jour": "2020/04/19", "cas": 3}, {"jour": "2020/04/20", "cas": 3}, {"jour": "2020/04/21", "cas": 3}, {"jour": "2020/04/22", "cas": 3}, {"jour": "2020/04/23", "cas": 3}, {"jour": "2020/04/24", "cas": 3}, {"jour": "2020/04/25", "cas": 3}, {"jour": "2020/04/26", "cas": 3}, {"jour": "2020/04/27", "cas": 3}, {"jour": "2020/04/28", "cas": 3}, {"jour": "2020/04/29", "cas": 3}, {"jour": "2020/04/30", "cas": 3}, {"jour": "2020/05/01", "cas": 3}, {"jour": "2020/05/02", "cas": 3}, {"jour": "2020/05/03", "cas": 3}, {"jour": "2020/05/04", "cas": 4}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_60a2c6fe901240ba9bfeb4965a8e9b3c = L.marker(
+                [45.6512748, 0.1576745],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_6ae47b099a3c4171afa75efdc607fe70 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_44e5a3eb39c0416792526c4ceb253e84 = $(`             <div id="vega_lite_44e5a3eb39c0416792526c4ceb253e84"></div>             `)[0];
+            popup_6ae47b099a3c4171afa75efdc607fe70.setContent(vega_lite_44e5a3eb39c0416792526c4ceb253e84);
+        
+
+        marker_60a2c6fe901240ba9bfeb4965a8e9b3c.bindPopup(popup_6ae47b099a3c4171afa75efdc607fe70)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_44e5a3eb39c0416792526c4ceb253e84, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:16 ", "data": {"values": [{"jour": "2020/04/11", "cas": 2}, {"jour": "2020/04/12", "cas": 2}, {"jour": "2020/04/13", "cas": 2}, {"jour": "2020/04/14", "cas": 2}, {"jour": "2020/04/15", "cas": 2}, {"jour": "2020/04/16", "cas": 2}, {"jour": "2020/04/17", "cas": 2}, {"jour": "2020/04/18", "cas": 2}, {"jour": "2020/04/19", "cas": 2}, {"jour": "2020/04/20", "cas": 2}, {"jour": "2020/04/21", "cas": 2}, {"jour": "2020/04/22", "cas": 2}, {"jour": "2020/04/23", "cas": 2}, {"jour": "2020/04/24", "cas": 2}, {"jour": "2020/04/25", "cas": 2}, {"jour": "2020/04/26", "cas": 2}, {"jour": "2020/04/27", "cas": 2}, {"jour": "2020/04/28", "cas": 2}, {"jour": "2020/04/29", "cas": 2}, {"jour": "2020/04/30", "cas": 2}, {"jour": "2020/05/01", "cas": 3}, {"jour": "2020/05/02", "cas": 3}, {"jour": "2020/05/03", "cas": 3}, {"jour": "2020/05/04", "cas": 3}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_f97a2b048b3546fdab28865535410941 = L.marker(
+                [46.1591126, -1.1520434],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_35261bc2547449518b0e28a3cc295a2c = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_2bcf0e58e3b4403790b6c2f9432551be = $(`             <div id="vega_lite_2bcf0e58e3b4403790b6c2f9432551be"></div>             `)[0];
+            popup_35261bc2547449518b0e28a3cc295a2c.setContent(vega_lite_2bcf0e58e3b4403790b6c2f9432551be);
+        
+
+        marker_f97a2b048b3546fdab28865535410941.bindPopup(popup_35261bc2547449518b0e28a3cc295a2c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_2bcf0e58e3b4403790b6c2f9432551be, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:17 ", "data": {"values": [{"jour": "2020/04/11", "cas": 5}, {"jour": "2020/04/12", "cas": 5}, {"jour": "2020/04/13", "cas": 5}, {"jour": "2020/04/14", "cas": 5}, {"jour": "2020/04/15", "cas": 5}, {"jour": "2020/04/16", "cas": 5}, {"jour": "2020/04/17", "cas": 5}, {"jour": "2020/04/18", "cas": 5}, {"jour": "2020/04/19", "cas": 5}, {"jour": "2020/04/20", "cas": 5}, {"jour": "2020/04/21", "cas": 5}, {"jour": "2020/04/22", "cas": 6}, {"jour": "2020/04/23", "cas": 6}, {"jour": "2020/04/24", "cas": 6}, {"jour": "2020/04/25", "cas": 6}, {"jour": "2020/04/26", "cas": 6}, {"jour": "2020/04/27", "cas": 6}, {"jour": "2020/04/28", "cas": 6}, {"jour": "2020/04/29", "cas": 6}, {"jour": "2020/04/30", "cas": 6}, {"jour": "2020/05/01", "cas": 6}, {"jour": "2020/05/02", "cas": 6}, {"jour": "2020/05/03", "cas": 6}, {"jour": "2020/05/04", "cas": 6}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_58c7aece27e14b2886072fa72aca3310 = L.marker(
+                [47.0805693, 2.398932],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_f9db8a80d1b14098ae0e017011f4be83 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_396296ac7e60483ba4b74c7ee53ab2c2 = $(`             <div id="vega_lite_396296ac7e60483ba4b74c7ee53ab2c2"></div>             `)[0];
+            popup_f9db8a80d1b14098ae0e017011f4be83.setContent(vega_lite_396296ac7e60483ba4b74c7ee53ab2c2);
+        
+
+        marker_58c7aece27e14b2886072fa72aca3310.bindPopup(popup_f9db8a80d1b14098ae0e017011f4be83)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_396296ac7e60483ba4b74c7ee53ab2c2, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:18 ", "data": {"values": [{"jour": "2020/04/11", "cas": 4}, {"jour": "2020/04/12", "cas": 4}, {"jour": "2020/04/13", "cas": 4}, {"jour": "2020/04/14", "cas": 4}, {"jour": "2020/04/15", "cas": 5}, {"jour": "2020/04/16", "cas": 5}, {"jour": "2020/04/17", "cas": 5}, {"jour": "2020/04/18", "cas": 5}, {"jour": "2020/04/19", "cas": 5}, {"jour": "2020/04/20", "cas": 5}, {"jour": "2020/04/21", "cas": 5}, {"jour": "2020/04/22", "cas": 5}, {"jour": "2020/04/23", "cas": 5}, {"jour": "2020/04/24", "cas": 5}, {"jour": "2020/04/25", "cas": 5}, {"jour": "2020/04/26", "cas": 5}, {"jour": "2020/04/27", "cas": 5}, {"jour": "2020/04/28", "cas": 5}, {"jour": "2020/04/29", "cas": 5}, {"jour": "2020/04/30", "cas": 5}, {"jour": "2020/05/01", "cas": 5}, {"jour": "2020/05/02", "cas": 5}, {"jour": "2020/05/03", "cas": 5}, {"jour": "2020/05/04", "cas": 5}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_c0d729af425e4342bf46004198bfe8b2 = L.marker(
+                [45.2678158, 1.7706904],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_d7afc48abd984debb75f7e390dcab78c = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6491849e45b942f7b918c1cc838c1044 = $(`             <div id="vega_lite_6491849e45b942f7b918c1cc838c1044"></div>             `)[0];
+            popup_d7afc48abd984debb75f7e390dcab78c.setContent(vega_lite_6491849e45b942f7b918c1cc838c1044);
+        
+
+        marker_c0d729af425e4342bf46004198bfe8b2.bindPopup(popup_d7afc48abd984debb75f7e390dcab78c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6491849e45b942f7b918c1cc838c1044, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:19 ", "data": {"values": [{"jour": "2020/04/11", "cas": 4}, {"jour": "2020/04/12", "cas": 4}, {"jour": "2020/04/13", "cas": 4}, {"jour": "2020/04/14", "cas": 4}, {"jour": "2020/04/15", "cas": 4}, {"jour": "2020/04/16", "cas": 4}, {"jour": "2020/04/17", "cas": 4}, {"jour": "2020/04/18", "cas": 4}, {"jour": "2020/04/19", "cas": 4}, {"jour": "2020/04/20", "cas": 4}, {"jour": "2020/04/21", "cas": 4}, {"jour": "2020/04/22", "cas": 4}, {"jour": "2020/04/23", "cas": 4}, {"jour": "2020/04/24", "cas": 4}, {"jour": "2020/04/25", "cas": 4}, {"jour": "2020/04/26", "cas": 4}, {"jour": "2020/04/27", "cas": 4}, {"jour": "2020/04/28", "cas": 4}, {"jour": "2020/04/29", "cas": 4}, {"jour": "2020/04/30", "cas": 4}, {"jour": "2020/05/01", "cas": 4}, {"jour": "2020/05/02", "cas": 4}, {"jour": "2020/05/03", "cas": 4}, {"jour": "2020/05/04", "cas": 4}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_952397a8cf6646129d202f0a2647e4c6 = L.marker(
+                [47.3215806, 5.0414701],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_8055b0fb202d43cea556e86b05219220 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_738cb7cf2d9b433abf9f4517ad399f61 = $(`             <div id="vega_lite_738cb7cf2d9b433abf9f4517ad399f61"></div>             `)[0];
+            popup_8055b0fb202d43cea556e86b05219220.setContent(vega_lite_738cb7cf2d9b433abf9f4517ad399f61);
+        
+
+        marker_952397a8cf6646129d202f0a2647e4c6.bindPopup(popup_8055b0fb202d43cea556e86b05219220)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_738cb7cf2d9b433abf9f4517ad399f61, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:21 ", "data": {"values": [{"jour": "2020/04/11", "cas": 8}, {"jour": "2020/04/12", "cas": 8}, {"jour": "2020/04/13", "cas": 8}, {"jour": "2020/04/14", "cas": 8}, {"jour": "2020/04/15", "cas": 8}, {"jour": "2020/04/16", "cas": 8}, {"jour": "2020/04/17", "cas": 8}, {"jour": "2020/04/18", "cas": 8}, {"jour": "2020/04/19", "cas": 8}, {"jour": "2020/04/20", "cas": 8}, {"jour": "2020/04/21", "cas": 8}, {"jour": "2020/04/22", "cas": 8}, {"jour": "2020/04/23", "cas": 8}, {"jour": "2020/04/24", "cas": 8}, {"jour": "2020/04/25", "cas": 10}, {"jour": "2020/04/26", "cas": 10}, {"jour": "2020/04/27", "cas": 10}, {"jour": "2020/04/28", "cas": 10}, {"jour": "2020/04/29", "cas": 11}, {"jour": "2020/04/30", "cas": 11}, {"jour": "2020/05/01", "cas": 11}, {"jour": "2020/05/02", "cas": 11}, {"jour": "2020/05/03", "cas": 11}, {"jour": "2020/05/04", "cas": 11}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_ea7adb5819cc4a02bdb9387171e32da8 = L.marker(
+                [48.5141594, -2.7602707],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_fea751ec163d4a1595eb60218b9d2c91 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_e5b51d9451964b5f9dc910ee79457304 = $(`             <div id="vega_lite_e5b51d9451964b5f9dc910ee79457304"></div>             `)[0];
+            popup_fea751ec163d4a1595eb60218b9d2c91.setContent(vega_lite_e5b51d9451964b5f9dc910ee79457304);
+        
+
+        marker_ea7adb5819cc4a02bdb9387171e32da8.bindPopup(popup_fea751ec163d4a1595eb60218b9d2c91)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e5b51d9451964b5f9dc910ee79457304, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:22 ", "data": {"values": [{"jour": "2020/04/11", "cas": 6}, {"jour": "2020/04/12", "cas": 6}, {"jour": "2020/04/13", "cas": 7}, {"jour": "2020/04/14", "cas": 7}, {"jour": "2020/04/15", "cas": 8}, {"jour": "2020/04/16", "cas": 8}, {"jour": "2020/04/17", "cas": 8}, {"jour": "2020/04/18", "cas": 8}, {"jour": "2020/04/19", "cas": 8}, {"jour": "2020/04/20", "cas": 8}, {"jour": "2020/04/21", "cas": 8}, {"jour": "2020/04/22", "cas": 9}, {"jour": "2020/04/23", "cas": 9}, {"jour": "2020/04/24", "cas": 9}, {"jour": "2020/04/25", "cas": 9}, {"jour": "2020/04/26", "cas": 9}, {"jour": "2020/04/27", "cas": 9}, {"jour": "2020/04/28", "cas": 9}, {"jour": "2020/04/29", "cas": 9}, {"jour": "2020/04/30", "cas": 9}, {"jour": "2020/05/01", "cas": 9}, {"jour": "2020/05/02", "cas": 9}, {"jour": "2020/05/03", "cas": 9}, {"jour": "2020/05/04", "cas": 9}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_2e4fa89bd8b84b7b8258c3b2c9f64f76 = L.marker(
+                [46.1686865, 1.8713349],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_08d2639b004540cbb32bd7911e4e5751 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_a50ee886a4cf412fb063e19ee56286c2 = $(`             <div id="vega_lite_a50ee886a4cf412fb063e19ee56286c2"></div>             `)[0];
+            popup_08d2639b004540cbb32bd7911e4e5751.setContent(vega_lite_a50ee886a4cf412fb063e19ee56286c2);
+        
+
+        marker_2e4fa89bd8b84b7b8258c3b2c9f64f76.bindPopup(popup_08d2639b004540cbb32bd7911e4e5751)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a50ee886a4cf412fb063e19ee56286c2, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:23 ", "data": {"values": [{"jour": "2020/04/11", "cas": 2}, {"jour": "2020/04/12", "cas": 2}, {"jour": "2020/04/13", "cas": 2}, {"jour": "2020/04/14", "cas": 2}, {"jour": "2020/04/15", "cas": 2}, {"jour": "2020/04/16", "cas": 2}, {"jour": "2020/04/17", "cas": 2}, {"jour": "2020/04/18", "cas": 2}, {"jour": "2020/04/19", "cas": 2}, {"jour": "2020/04/20", "cas": 2}, {"jour": "2020/04/21", "cas": 2}, {"jour": "2020/04/22", "cas": 2}, {"jour": "2020/04/23", "cas": 2}, {"jour": "2020/04/24", "cas": 2}, {"jour": "2020/04/25", "cas": 2}, {"jour": "2020/04/26", "cas": 2}, {"jour": "2020/04/27", "cas": 2}, {"jour": "2020/04/28", "cas": 2}, {"jour": "2020/04/29", "cas": 2}, {"jour": "2020/04/30", "cas": 2}, {"jour": "2020/05/01", "cas": 2}, {"jour": "2020/05/02", "cas": 2}, {"jour": "2020/05/03", "cas": 2}, {"jour": "2020/05/04", "cas": 2}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_0bef14fbee3c4774b67c1d59fc4d2a32 = L.marker(
+                [46.3239455, -0.4645212],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_0133f5c0c9ac4dfa971784d7fd22af4d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_38e820825f5144deb88cadc6ee0b61e8 = $(`             <div id="vega_lite_38e820825f5144deb88cadc6ee0b61e8"></div>             `)[0];
+            popup_0133f5c0c9ac4dfa971784d7fd22af4d.setContent(vega_lite_38e820825f5144deb88cadc6ee0b61e8);
+        
+
+        marker_0bef14fbee3c4774b67c1d59fc4d2a32.bindPopup(popup_0133f5c0c9ac4dfa971784d7fd22af4d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_38e820825f5144deb88cadc6ee0b61e8, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:79 ", "data": {"values": [{"jour": "2020/04/11", "cas": 4}, {"jour": "2020/04/12", "cas": 4}, {"jour": "2020/04/13", "cas": 4}, {"jour": "2020/04/14", "cas": 4}, {"jour": "2020/04/15", "cas": 4}, {"jour": "2020/04/16", "cas": 4}, {"jour": "2020/04/17", "cas": 4}, {"jour": "2020/04/18", "cas": 4}, {"jour": "2020/04/19", "cas": 4}, {"jour": "2020/04/20", "cas": 4}, {"jour": "2020/04/21", "cas": 4}, {"jour": "2020/04/22", "cas": 4}, {"jour": "2020/04/23", "cas": 4}, {"jour": "2020/04/24", "cas": 4}, {"jour": "2020/04/25", "cas": 4}, {"jour": "2020/04/26", "cas": 4}, {"jour": "2020/04/27", "cas": 4}, {"jour": "2020/04/28", "cas": 4}, {"jour": "2020/04/29", "cas": 4}, {"jour": "2020/04/30", "cas": 4}, {"jour": "2020/05/01", "cas": 4}, {"jour": "2020/05/02", "cas": 4}, {"jour": "2020/05/03", "cas": 4}, {"jour": "2020/05/04", "cas": 4}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_462b7d6460ea42c68057651257e76ccc = L.marker(
+                [45.1909365, 0.7184407],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_92373ffecca4420cba3ad42138d7e83c = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_bda9c93014a840209462a5f58bdf4f2e = $(`             <div id="vega_lite_bda9c93014a840209462a5f58bdf4f2e"></div>             `)[0];
+            popup_92373ffecca4420cba3ad42138d7e83c.setContent(vega_lite_bda9c93014a840209462a5f58bdf4f2e);
+        
+
+        marker_462b7d6460ea42c68057651257e76ccc.bindPopup(popup_92373ffecca4420cba3ad42138d7e83c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bda9c93014a840209462a5f58bdf4f2e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:24 ", "data": {"values": [{"jour": "2020/04/11", "cas": 3}, {"jour": "2020/04/12", "cas": 3}, {"jour": "2020/04/13", "cas": 3}, {"jour": "2020/04/14", "cas": 3}, {"jour": "2020/04/15", "cas": 3}, {"jour": "2020/04/16", "cas": 3}, {"jour": "2020/04/17", "cas": 3}, {"jour": "2020/04/18", "cas": 3}, {"jour": "2020/04/19", "cas": 3}, {"jour": "2020/04/20", "cas": 3}, {"jour": "2020/04/21", "cas": 3}, {"jour": "2020/04/22", "cas": 3}, {"jour": "2020/04/23", "cas": 3}, {"jour": "2020/04/24", "cas": 3}, {"jour": "2020/04/25", "cas": 3}, {"jour": "2020/04/26", "cas": 3}, {"jour": "2020/04/27", "cas": 3}, {"jour": "2020/04/28", "cas": 3}, {"jour": "2020/04/29", "cas": 3}, {"jour": "2020/04/30", "cas": 3}, {"jour": "2020/05/01", "cas": 3}, {"jour": "2020/05/02", "cas": 3}, {"jour": "2020/05/03", "cas": 3}, {"jour": "2020/05/04", "cas": 3}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_fa06647ac5cb447489646b5b985129b1 = L.marker(
+                [47.2380222, 6.0243622],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_a324a06cbec74e7687148ee910ec237c = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_5a1fa74d4a5d4b5db234a08d3a8b8e4b = $(`             <div id="vega_lite_5a1fa74d4a5d4b5db234a08d3a8b8e4b"></div>             `)[0];
+            popup_a324a06cbec74e7687148ee910ec237c.setContent(vega_lite_5a1fa74d4a5d4b5db234a08d3a8b8e4b);
+        
+
+        marker_fa06647ac5cb447489646b5b985129b1.bindPopup(popup_a324a06cbec74e7687148ee910ec237c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_5a1fa74d4a5d4b5db234a08d3a8b8e4b, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:25 ", "data": {"values": [{"jour": "2020/04/11", "cas": 5}, {"jour": "2020/04/12", "cas": 5}, {"jour": "2020/04/13", "cas": 5}, {"jour": "2020/04/14", "cas": 6}, {"jour": "2020/04/15", "cas": 6}, {"jour": "2020/04/16", "cas": 6}, {"jour": "2020/04/17", "cas": 7}, {"jour": "2020/04/18", "cas": 8}, {"jour": "2020/04/19", "cas": 8}, {"jour": "2020/04/20", "cas": 8}, {"jour": "2020/04/21", "cas": 8}, {"jour": "2020/04/22", "cas": 8}, {"jour": "2020/04/23", "cas": 8}, {"jour": "2020/04/24", "cas": 8}, {"jour": "2020/04/25", "cas": 8}, {"jour": "2020/04/26", "cas": 8}, {"jour": "2020/04/27", "cas": 8}, {"jour": "2020/04/28", "cas": 8}, {"jour": "2020/04/29", "cas": 8}, {"jour": "2020/04/30", "cas": 9}, {"jour": "2020/05/01", "cas": 9}, {"jour": "2020/05/02", "cas": 9}, {"jour": "2020/05/03", "cas": 9}, {"jour": "2020/05/04", "cas": 10}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_cba2d63f8641494583ee1a8b8033af1d = L.marker(
+                [44.9333, 4.9],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_bfc71128aec844c98ff57b49762d5b98 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_3a86b6bf311d41d791e9c814329af258 = $(`             <div id="vega_lite_3a86b6bf311d41d791e9c814329af258"></div>             `)[0];
+            popup_bfc71128aec844c98ff57b49762d5b98.setContent(vega_lite_3a86b6bf311d41d791e9c814329af258);
+        
+
+        marker_cba2d63f8641494583ee1a8b8033af1d.bindPopup(popup_bfc71128aec844c98ff57b49762d5b98)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3a86b6bf311d41d791e9c814329af258, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:26 ", "data": {"values": [{"jour": "2020/04/11", "cas": 8}, {"jour": "2020/04/12", "cas": 9}, {"jour": "2020/04/13", "cas": 9}, {"jour": "2020/04/14", "cas": 9}, {"jour": "2020/04/15", "cas": 11}, {"jour": "2020/04/16", "cas": 11}, {"jour": "2020/04/17", "cas": 11}, {"jour": "2020/04/18", "cas": 11}, {"jour": "2020/04/19", "cas": 11}, {"jour": "2020/04/20", "cas": 11}, {"jour": "2020/04/21", "cas": 12}, {"jour": "2020/04/22", "cas": 12}, {"jour": "2020/04/23", "cas": 12}, {"jour": "2020/04/24", "cas": 13}, {"jour": "2020/04/25", "cas": 13}, {"jour": "2020/04/26", "cas": 13}, {"jour": "2020/04/27", "cas": 13}, {"jour": "2020/04/28", "cas": 13}, {"jour": "2020/04/29", "cas": 13}, {"jour": "2020/04/30", "cas": 14}, {"jour": "2020/05/01", "cas": 14}, {"jour": "2020/05/02", "cas": 14}, {"jour": "2020/05/03", "cas": 14}, {"jour": "2020/05/04", "cas": 14}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_7cf1c2281dee40e7ad79570570d5a046 = L.marker(
+                [48.6284131, 2.434598],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_d0151a689a164b8cbf5e3cacccce9fc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_acf61ef1b6ff469c9edca198e053e3ae = $(`             <div id="vega_lite_acf61ef1b6ff469c9edca198e053e3ae"></div>             `)[0];
+            popup_d0151a689a164b8cbf5e3cacccce9fc9.setContent(vega_lite_acf61ef1b6ff469c9edca198e053e3ae);
+        
+
+        marker_7cf1c2281dee40e7ad79570570d5a046.bindPopup(popup_d0151a689a164b8cbf5e3cacccce9fc9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_acf61ef1b6ff469c9edca198e053e3ae, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:91 ", "data": {"values": [{"jour": "2020/04/11", "cas": 26}, {"jour": "2020/04/12", "cas": 26}, {"jour": "2020/04/13", "cas": 26}, {"jour": "2020/04/14", "cas": 26}, {"jour": "2020/04/15", "cas": 26}, {"jour": "2020/04/16", "cas": 28}, {"jour": "2020/04/17", "cas": 28}, {"jour": "2020/04/18", "cas": 29}, {"jour": "2020/04/19", "cas": 29}, {"jour": "2020/04/20", "cas": 29}, {"jour": "2020/04/21", "cas": 29}, {"jour": "2020/04/22", "cas": 30}, {"jour": "2020/04/23", "cas": 30}, {"jour": "2020/04/24", "cas": 31}, {"jour": "2020/04/25", "cas": 31}, {"jour": "2020/04/26", "cas": 31}, {"jour": "2020/04/27", "cas": 31}, {"jour": "2020/04/28", "cas": 31}, {"jour": "2020/04/29", "cas": 31}, {"jour": "2020/04/30", "cas": 31}, {"jour": "2020/05/01", "cas": 31}, {"jour": "2020/05/02", "cas": 31}, {"jour": "2020/05/03", "cas": 31}, {"jour": "2020/05/04", "cas": 31}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_ccc3c8045d9149109258e2c6dc3cccdd = L.marker(
+                [49.0268903, 1.1510164],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_d5ff347589b045d5b10af3535c8b2e9b = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_8722a85277514ab58fd7b1c5e19fb9ab = $(`             <div id="vega_lite_8722a85277514ab58fd7b1c5e19fb9ab"></div>             `)[0];
+            popup_d5ff347589b045d5b10af3535c8b2e9b.setContent(vega_lite_8722a85277514ab58fd7b1c5e19fb9ab);
+        
+
+        marker_ccc3c8045d9149109258e2c6dc3cccdd.bindPopup(popup_d5ff347589b045d5b10af3535c8b2e9b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_8722a85277514ab58fd7b1c5e19fb9ab, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:27 ", "data": {"values": [{"jour": "2020/04/11", "cas": 8}, {"jour": "2020/04/12", "cas": 8}, {"jour": "2020/04/13", "cas": 8}, {"jour": "2020/04/14", "cas": 8}, {"jour": "2020/04/15", "cas": 9}, {"jour": "2020/04/16", "cas": 9}, {"jour": "2020/04/17", "cas": 8}, {"jour": "2020/04/18", "cas": 8}, {"jour": "2020/04/19", "cas": 8}, {"jour": "2020/04/20", "cas": 8}, {"jour": "2020/04/21", "cas": 8}, {"jour": "2020/04/22", "cas": 8}, {"jour": "2020/04/23", "cas": 8}, {"jour": "2020/04/24", "cas": 8}, {"jour": "2020/04/25", "cas": 8}, {"jour": "2020/04/26", "cas": 8}, {"jour": "2020/04/27", "cas": 8}, {"jour": "2020/04/28", "cas": 8}, {"jour": "2020/04/29", "cas": 8}, {"jour": "2020/04/30", "cas": 8}, {"jour": "2020/05/01", "cas": 8}, {"jour": "2020/05/02", "cas": 8}, {"jour": "2020/05/03", "cas": 8}, {"jour": "2020/05/04", "cas": 8}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_29bbd4f278da41adbc1571b462cfaad9 = L.marker(
+                [48.4438601, 1.4881434],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_36dce4b493ae492bb3cc7b1a74d7b198 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_bba55b33acbf4f46959942e50d9b2478 = $(`             <div id="vega_lite_bba55b33acbf4f46959942e50d9b2478"></div>             `)[0];
+            popup_36dce4b493ae492bb3cc7b1a74d7b198.setContent(vega_lite_bba55b33acbf4f46959942e50d9b2478);
+        
+
+        marker_29bbd4f278da41adbc1571b462cfaad9.bindPopup(popup_36dce4b493ae492bb3cc7b1a74d7b198)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bba55b33acbf4f46959942e50d9b2478, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:28 ", "data": {"values": [{"jour": "2020/04/11", "cas": 9}, {"jour": "2020/04/12", "cas": 9}, {"jour": "2020/04/13", "cas": 9}, {"jour": "2020/04/14", "cas": 9}, {"jour": "2020/04/15", "cas": 9}, {"jour": "2020/04/16", "cas": 9}, {"jour": "2020/04/17", "cas": 9}, {"jour": "2020/04/18", "cas": 10}, {"jour": "2020/04/19", "cas": 10}, {"jour": "2020/04/20", "cas": 10}, {"jour": "2020/04/21", "cas": 10}, {"jour": "2020/04/22", "cas": 10}, {"jour": "2020/04/23", "cas": 10}, {"jour": "2020/04/24", "cas": 10}, {"jour": "2020/04/25", "cas": 10}, {"jour": "2020/04/26", "cas": 10}, {"jour": "2020/04/27", "cas": 10}, {"jour": "2020/04/28", "cas": 10}, {"jour": "2020/04/29", "cas": 10}, {"jour": "2020/04/30", "cas": 10}, {"jour": "2020/05/01", "cas": 10}, {"jour": "2020/05/02", "cas": 10}, {"jour": "2020/05/03", "cas": 10}, {"jour": "2020/05/04", "cas": 10}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_f3415706a6264e8da55ef91b86615cbe = L.marker(
+                [47.9960325, -4.1024782],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_9d2077cf32c1404d9a0b9065bb289994 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_9c4b4b0d149346bf86de6eebecfaa26e = $(`             <div id="vega_lite_9c4b4b0d149346bf86de6eebecfaa26e"></div>             `)[0];
+            popup_9d2077cf32c1404d9a0b9065bb289994.setContent(vega_lite_9c4b4b0d149346bf86de6eebecfaa26e);
+        
+
+        marker_f3415706a6264e8da55ef91b86615cbe.bindPopup(popup_9d2077cf32c1404d9a0b9065bb289994)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_9c4b4b0d149346bf86de6eebecfaa26e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:29 ", "data": {"values": [{"jour": "2020/04/11", "cas": 9}, {"jour": "2020/04/12", "cas": 10}, {"jour": "2020/04/13", "cas": 10}, {"jour": "2020/04/14", "cas": 10}, {"jour": "2020/04/15", "cas": 10}, {"jour": "2020/04/16", "cas": 10}, {"jour": "2020/04/17", "cas": 10}, {"jour": "2020/04/18", "cas": 10}, {"jour": "2020/04/19", "cas": 10}, {"jour": "2020/04/20", "cas": 10}, {"jour": "2020/04/21", "cas": 10}, {"jour": "2020/04/22", "cas": 10}, {"jour": "2020/04/23", "cas": 11}, {"jour": "2020/04/24", "cas": 11}, {"jour": "2020/04/25", "cas": 11}, {"jour": "2020/04/26", "cas": 11}, {"jour": "2020/04/27", "cas": 11}, {"jour": "2020/04/28", "cas": 11}, {"jour": "2020/04/29", "cas": 11}, {"jour": "2020/04/30", "cas": 11}, {"jour": "2020/05/01", "cas": 11}, {"jour": "2020/05/02", "cas": 11}, {"jour": "2020/05/03", "cas": 11}, {"jour": "2020/05/04", "cas": 11}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_2947b4bfab174a6db818ecc5b9ad1b20 = L.marker(
+                [443.8374249, 4.3600687],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_16766c090c8d4bc79183b51128657170 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_b93d4c88caf4429ab2bc971b3eb186da = $(`             <div id="vega_lite_b93d4c88caf4429ab2bc971b3eb186da"></div>             `)[0];
+            popup_16766c090c8d4bc79183b51128657170.setContent(vega_lite_b93d4c88caf4429ab2bc971b3eb186da);
+        
+
+        marker_2947b4bfab174a6db818ecc5b9ad1b20.bindPopup(popup_16766c090c8d4bc79183b51128657170)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_b93d4c88caf4429ab2bc971b3eb186da, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:30 ", "data": {"values": [{"jour": "2020/04/11", "cas": 4}, {"jour": "2020/04/12", "cas": 4}, {"jour": "2020/04/13", "cas": 4}, {"jour": "2020/04/14", "cas": 4}, {"jour": "2020/04/15", "cas": 4}, {"jour": "2020/04/16", "cas": 4}, {"jour": "2020/04/17", "cas": 4}, {"jour": "2020/04/18", "cas": 4}, {"jour": "2020/04/19", "cas": 4}, {"jour": "2020/04/20", "cas": 4}, {"jour": "2020/04/21", "cas": 4}, {"jour": "2020/04/22", "cas": 4}, {"jour": "2020/04/23", "cas": 4}, {"jour": "2020/04/24", "cas": 4}, {"jour": "2020/04/25", "cas": 5}, {"jour": "2020/04/26", "cas": 5}, {"jour": "2020/04/27", "cas": 5}, {"jour": "2020/04/28", "cas": 5}, {"jour": "2020/04/29", "cas": 5}, {"jour": "2020/04/30", "cas": 5}, {"jour": "2020/05/01", "cas": 5}, {"jour": "2020/05/02", "cas": 5}, {"jour": "2020/05/03", "cas": 5}, {"jour": "2020/05/04", "cas": 5}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_7b7f9bab0cd447a5b4e20b0ca4d88916 = L.marker(
+                [43.6463558, 0.5850507],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_9ff4e6ee1c4e4f20aecc5b5e8ea57bbe = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6a493c86ed35444eba744d7ea90fb5f5 = $(`             <div id="vega_lite_6a493c86ed35444eba744d7ea90fb5f5"></div>             `)[0];
+            popup_9ff4e6ee1c4e4f20aecc5b5e8ea57bbe.setContent(vega_lite_6a493c86ed35444eba744d7ea90fb5f5);
+        
+
+        marker_7b7f9bab0cd447a5b4e20b0ca4d88916.bindPopup(popup_9ff4e6ee1c4e4f20aecc5b5e8ea57bbe)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6a493c86ed35444eba744d7ea90fb5f5, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:32 ", "data": {"values": [{"jour": "2020/04/11", "cas": 2}, {"jour": "2020/04/12", "cas": 2}, {"jour": "2020/04/13", "cas": 2}, {"jour": "2020/04/14", "cas": 2}, {"jour": "2020/04/15", "cas": 2}, {"jour": "2020/04/16", "cas": 2}, {"jour": "2020/04/17", "cas": 2}, {"jour": "2020/04/18", "cas": 2}, {"jour": "2020/04/19", "cas": 2}, {"jour": "2020/04/20", "cas": 2}, {"jour": "2020/04/21", "cas": 2}, {"jour": "2020/04/22", "cas": 2}, {"jour": "2020/04/23", "cas": 2}, {"jour": "2020/04/24", "cas": 2}, {"jour": "2020/04/25", "cas": 2}, {"jour": "2020/04/26", "cas": 2}, {"jour": "2020/04/27", "cas": 2}, {"jour": "2020/04/28", "cas": 2}, {"jour": "2020/04/29", "cas": 2}, {"jour": "2020/04/30", "cas": 2}, {"jour": "2020/05/01", "cas": 2}, {"jour": "2020/05/02", "cas": 2}, {"jour": "2020/05/03", "cas": 2}, {"jour": "2020/05/04", "cas": 2}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_687c44825eae4734b1f6ade3c6be440b = L.marker(
+                [44.841225, -0.5800364],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_5c98af27a72a48b0af5af6e44477f7b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_4809ec3fc90446c099a489858f144b2d = $(`             <div id="vega_lite_4809ec3fc90446c099a489858f144b2d"></div>             `)[0];
+            popup_5c98af27a72a48b0af5af6e44477f7b9.setContent(vega_lite_4809ec3fc90446c099a489858f144b2d);
+        
+
+        marker_687c44825eae4734b1f6ade3c6be440b.bindPopup(popup_5c98af27a72a48b0af5af6e44477f7b9)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_4809ec3fc90446c099a489858f144b2d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:33 ", "data": {"values": [{"jour": "2020/04/11", "cas": 19}, {"jour": "2020/04/12", "cas": 19}, {"jour": "2020/04/13", "cas": 19}, {"jour": "2020/04/14", "cas": 19}, {"jour": "2020/04/15", "cas": 19}, {"jour": "2020/04/16", "cas": 19}, {"jour": "2020/04/17", "cas": 20}, {"jour": "2020/04/18", "cas": 20}, {"jour": "2020/04/19", "cas": 20}, {"jour": "2020/04/20", "cas": 20}, {"jour": "2020/04/21", "cas": 20}, {"jour": "2020/04/22", "cas": 20}, {"jour": "2020/04/23", "cas": 20}, {"jour": "2020/04/24", "cas": 20}, {"jour": "2020/04/25", "cas": 20}, {"jour": "2020/04/26", "cas": 20}, {"jour": "2020/04/27", "cas": 20}, {"jour": "2020/04/28", "cas": 20}, {"jour": "2020/04/29", "cas": 20}, {"jour": "2020/04/30", "cas": 20}, {"jour": "2020/05/01", "cas": 20}, {"jour": "2020/05/02", "cas": 20}, {"jour": "2020/05/03", "cas": 20}, {"jour": "2020/05/04", "cas": 20}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_72b2228a8ebb4f15a995856a1b7dec81 = L.marker(
+                [48.0777517, 7.3579641],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_c79766a72b614bcf8d9d0c136eaeca35 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_f89426d351aa43d29e9b8fe8e9888d7e = $(`             <div id="vega_lite_f89426d351aa43d29e9b8fe8e9888d7e"></div>             `)[0];
+            popup_c79766a72b614bcf8d9d0c136eaeca35.setContent(vega_lite_f89426d351aa43d29e9b8fe8e9888d7e);
+        
+
+        marker_72b2228a8ebb4f15a995856a1b7dec81.bindPopup(popup_c79766a72b614bcf8d9d0c136eaeca35)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_f89426d351aa43d29e9b8fe8e9888d7e, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:68 ", "data": {"values": [{"jour": "2020/04/11", "cas": 23}, {"jour": "2020/04/12", "cas": 23}, {"jour": "2020/04/13", "cas": 23}, {"jour": "2020/04/14", "cas": 23}, {"jour": "2020/04/15", "cas": 25}, {"jour": "2020/04/16", "cas": 25}, {"jour": "2020/04/17", "cas": 27}, {"jour": "2020/04/18", "cas": 27}, {"jour": "2020/04/19", "cas": 27}, {"jour": "2020/04/20", "cas": 27}, {"jour": "2020/04/21", "cas": 27}, {"jour": "2020/04/22", "cas": 27}, {"jour": "2020/04/23", "cas": 28}, {"jour": "2020/04/24", "cas": 28}, {"jour": "2020/04/25", "cas": 28}, {"jour": "2020/04/26", "cas": 28}, {"jour": "2020/04/27", "cas": 28}, {"jour": "2020/04/28", "cas": 28}, {"jour": "2020/04/29", "cas": 28}, {"jour": "2020/04/30", "cas": 28}, {"jour": "2020/05/01", "cas": 28}, {"jour": "2020/05/02", "cas": 28}, {"jour": "2020/05/03", "cas": 28}, {"jour": "2020/05/04", "cas": 29}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_8d8e88a1de8a448fa3ccf3d3990b08db = L.marker(
+                [48.0777517, 7.3579641],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_ee51e543ae7c4398829aae909ae785e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_429bb68215664a2bb57607171f82377d = $(`             <div id="vega_lite_429bb68215664a2bb57607171f82377d"></div>             `)[0];
+            popup_ee51e543ae7c4398829aae909ae785e0.setContent(vega_lite_429bb68215664a2bb57607171f82377d);
+        
+
+        marker_8d8e88a1de8a448fa3ccf3d3990b08db.bindPopup(popup_ee51e543ae7c4398829aae909ae785e0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_429bb68215664a2bb57607171f82377d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:31 ", "data": {"values": [{"jour": "2020/04/11", "cas": 14}, {"jour": "2020/04/12", "cas": 14}, {"jour": "2020/04/13", "cas": 14}, {"jour": "2020/04/14", "cas": 14}, {"jour": "2020/04/15", "cas": 14}, {"jour": "2020/04/16", "cas": 14}, {"jour": "2020/04/17", "cas": 14}, {"jour": "2020/04/18", "cas": 14}, {"jour": "2020/04/19", "cas": 14}, {"jour": "2020/04/20", "cas": 14}, {"jour": "2020/04/21", "cas": 14}, {"jour": "2020/04/22", "cas": 14}, {"jour": "2020/04/23", "cas": 14}, {"jour": "2020/04/24", "cas": 14}, {"jour": "2020/04/25", "cas": 14}, {"jour": "2020/04/26", "cas": 14}, {"jour": "2020/04/27", "cas": 14}, {"jour": "2020/04/28", "cas": 14}, {"jour": "2020/04/29", "cas": 14}, {"jour": "2020/04/30", "cas": 14}, {"jour": "2020/05/01", "cas": 14}, {"jour": "2020/05/02", "cas": 14}, {"jour": "2020/05/03", "cas": 14}, {"jour": "2020/05/04", "cas": 14}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_14c8f815f9fd4d09b8c6dc83a3727bb7 = L.marker(
+                [46.2, 5.216667],
+                {}
+            ).addTo(map_f6a8ec8d1e96453c8216e4a7d83a5d54);
+        
+    
+        var popup_1c151c266b224b04a1d4022b5f81bf3a = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6540b5062e144cd7ab9fa46f13134cd1 = $(`             <div id="vega_lite_6540b5062e144cd7ab9fa46f13134cd1"></div>             `)[0];
+            popup_1c151c266b224b04a1d4022b5f81bf3a.setContent(vega_lite_6540b5062e144cd7ab9fa46f13134cd1);
+        
+
+        marker_14c8f815f9fd4d09b8c6dc83a3727bb7.bindPopup(popup_1c151c266b224b04a1d4022b5f81bf3a)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6540b5062e144cd7ab9fa46f13134cd1, {"$schema": "https://vega.github.io/schema/vega-lite/v4.json", "description": "A simple bar chart with embedded data.", "title": "departement:43 ", "data": {"values": [{"jour": "2020/04/11", "cas": 2}, {"jour": "2020/04/12", "cas": 2}, {"jour": "2020/04/13", "cas": 2}, {"jour": "2020/04/14", "cas": 2}, {"jour": "2020/04/15", "cas": 2}, {"jour": "2020/04/16", "cas": 2}, {"jour": "2020/04/17", "cas": 2}, {"jour": "2020/04/18", "cas": 2}, {"jour": "2020/04/19", "cas": 2}, {"jour": "2020/04/20", "cas": 2}, {"jour": "2020/04/21", "cas": 2}, {"jour": "2020/04/22", "cas": 2}, {"jour": "2020/04/23", "cas": 2}, {"jour": "2020/04/24", "cas": 2}, {"jour": "2020/04/25", "cas": 2}, {"jour": "2020/04/26", "cas": 2}, {"jour": "2020/04/27", "cas": 2}, {"jour": "2020/04/28", "cas": 2}, {"jour": "2020/04/29", "cas": 2}, {"jour": "2020/04/30", "cas": 3}, {"jour": "2020/05/01", "cas": 3}, {"jour": "2020/05/02", "cas": 3}, {"jour": "2020/05/03", "cas": 3}, {"jour": "2020/05/04", "cas": 3}]}, "mark": "bar", "encoding": {"x": {"field": "jour", "type": "temporal"}, "y": {"field": "cas", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+</script>
